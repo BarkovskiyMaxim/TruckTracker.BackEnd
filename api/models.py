@@ -44,4 +44,8 @@ class Shipping(models.Model):
     cargo_id = models.ForeignKey(Cargo, models.SET_NULL, null=True)
     route = models.TextField(null=True)
 
+class Path(models.Model):
+    track_id = models.PositiveIntegerField()
+    num = models.PositiveIntegerField()
+    coord = models.CharField(max_length = 128)
 # Create your models here.

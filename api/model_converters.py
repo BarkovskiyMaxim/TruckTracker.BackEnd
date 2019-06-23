@@ -52,4 +52,16 @@ def encode_shipping(sh):
         "cargo_name" : sh.cargo_id.name
     }
     return s
-        
+
+def encode_path(p):
+    print(p.id)
+    print(p.track_id)
+    print(p.num)
+    print(p.coord)
+    s = {
+        "id" : p.id,
+        "track_id" : p.track_id,
+        "num" : p.num,
+        "coord" : p.coord
+    }        
+    return s
